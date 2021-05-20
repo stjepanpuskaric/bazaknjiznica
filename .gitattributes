@@ -6,4 +6,16 @@ from katalog a inner join autor b
 on b.sifra=a.autor 
 where b.ime='August' and b.prezime='Šenoa';
 
+#zadatak 2
+#odaberite sve nazive izdavača koje su izdale kataloški zapis s autorima čije ime počinje sa slovom a
+
+select a.naziv
+from izdavac a inner join katalog b 
+on a.sifra=b.izdavac
+inner join autor c 
+on b.autor=c.sifra 
+where c.ime like 'A%';
+
+
+
 
