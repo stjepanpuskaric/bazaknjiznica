@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#zadatak 1 
+#odaberi sve knjige koje je napisao August Šenoa
+
+select a.naslov
+from katalog a inner join autor b 
+on b.sifra=a.autor 
+where b.ime='August' and b.prezime='Šenoa';
+
+
