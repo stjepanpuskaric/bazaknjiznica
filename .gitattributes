@@ -16,6 +16,14 @@ inner join autor c
 on b.autor=c.sifra 
 where c.ime like 'A%';
 
+#odaberite sva mjesta koja u svom nazivu nemaju slovo a 
+
+select * from mjesto where naziv not like '%a%';
+
+#odaberite sva mjesta koja u svom nazivu nemaju slobo b
+
+select * from mjesto where naziv not like '%b%';
+
 
 
 
